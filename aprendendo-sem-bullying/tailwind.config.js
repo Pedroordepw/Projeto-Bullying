@@ -9,7 +9,13 @@ export default {
       colors: {
         'header': '#e0f2f1',
         'button': '#80cbc4',
-        'button-text': '#004d40'
+        'color-text': '#004d40'
+      },
+      borderRadius: {
+        'custom': '18px',
+      },
+      fontFamily: {
+        'custom': ['Kadwa', 'serif'],
       },
     },
   },

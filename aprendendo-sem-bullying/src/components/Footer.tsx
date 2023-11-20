@@ -6,16 +6,16 @@ const Footer = () => {
   return (
     <div className='bg-header px-7 py-7'>
       <div>
-        <ul className='flex flex-col md:flex-row justify-between items-center p-5'>
-          <li className='mb-4 md:mb-0'>
+        <ul className='flex flex-col lg:flex-row justify-between items-center p-5'>
+          <li className='mb-4'>
             <img src={logoImage} alt='Project Logo image' className='h-14' />
           </li>
-          <li className='mb-4 md:mb-0'>
+          <li className='mb-4'>
             <img src={logoIfsul} alt='IFSUl Logo Image' className='h-12' />
           </li>
-          <li className='text-color-text font-custom mb-4 md:mb-0'>@Aprendendo Sem Bullying</li>
-          <li className='text-color-text font-custom mb-4 md:mb-0'>Sobre Nós</li>
-          <li className='text-color-text font-custom mb-4 md:mb-0'>Política de Privacidade</li>
+          <li className='text-color-text font-custom mb-4'>@Aprendendo Sem Bullying</li>
+          <li className='text-color-text font-custom mb-4'>Sobre Nós</li>
+          <li className='text-color-text font-custom mb-4'>Política de Privacidade</li>
         </ul>
       </div>
     </div>

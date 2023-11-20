@@ -1,28 +1,76 @@
-import React from 'react'
-import logoImage from '../public/logo_project.png'
+import React, { useState } from 'react';
+import logoImage from '../public/logo_project.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  return (
-    <div>
-      <div className='bg-header flex flex-col items-center pt-7 pb-7'>
-        <div className='flex flex-col items-center justify-center'>
-          <img src={logoImage} alt='Logo do projeto' className='md:w-48 lg:w-64 xl:w-96 max-w-full'/>
-        </div>
-        <div className='pt-7  flex-wrap'>
-          <ul className='flex flex-col md:flex-row justify-center md:justify-between space-y-4 md:space-y-0 md:space-x-4'>
-            <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>INÍCIO</li>
-            <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>TIPOS</li>
-            <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>SINAIS</li>
-            <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>EFEITOS</li>
-            <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>PREVENÇÃO</li>
-            <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>LEGISLAÇÃO</li>
-            <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>INTERVENÇÃO</li>
-            <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>DEPOIMENTOS</li>
-          </ul>
-        </div>        
-      </div>      
-    </div>
-  )
-}
+  const [menuOpen, setMenuOpen] = useState(false);
 
-export default Header
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <div className='bg-header w-full md:max-w-full flex flex-col items-center pt-7 pb-7'>
+      <div className='flex flex-col items-center justify-center'>
+        <img src={logoImage} alt='Logo do projeto' className='w-72 sm:w-72 md:w-80 lg:w-96 xl:w-96' />
+      </div>
+      <div className='pt-7 px-4'>
+        <button
+          className='lg:hidden text-white focus:outline-none'
+          onClick={toggleMenu}
+        >
+          <svg
+            className='w-6 h-6'
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            {menuOpen ? (
+              // Ícone para fechar o menu
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='2'
+                d='M6 18L18 6M6 6l12 12'
+              ></path>
+            ) : (
+              // Ícone para abrir o menu
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='2'
+                d='M4 6h16M4 12h16m-7 6h7'
+              ></path>
+            )}
+          </svg>
+        </button>
+
+        {/* Lista de itens do menu */}
+        <ul
+          className={`lg:flex lg:space-x-4 ${menuOpen ? 'flex flex-col' : 'hidden'}`}
+        >
+          <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>
+            <Link className=' hover:underline' to="/">INÍCIO</Link></li>
+          <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>
+            <Link className=' hover:underline' to="/tipos">TIPOS</Link></li>
+          <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>
+            <Link className=' hover:underline' to="/sinais">SINAIS</Link></li>
+          <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>
+            <Link className=' hover:underline' to="/efeitos">EFEITOS</Link></li>
+          <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>
+            <Link className=' hover:underline' to="/prevencao">PREVENÇÃO</Link></li>
+          <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>
+            <Link className=' hover:underline' to="/legislacao">LEGISLAÇÃO</Link></li>
+          <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>
+            <Link className=' hover:underline' to="/intervencao">INTERVENÇÃO</Link></li>
+          <li className='bg-button text-color-text rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl items-center'>
+            <Link className=' hover:underline' to="/depoimentos">DEPOIMENTOS</Link></li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
+

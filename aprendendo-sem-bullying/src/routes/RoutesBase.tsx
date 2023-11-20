@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const RoutesBase = () => {
   return (
     <div>
-        <header className='flex gap-4'>
-            <Link className=' hover:underline' to="/">inicio</Link>
-            <Link className=' hover:underline' to="/tipos">tipos</Link>
-            <Link className=' hover:underline' to="/efeitos">efeitos</Link>
-        </header>
-        <Outlet/>
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
   )
 }

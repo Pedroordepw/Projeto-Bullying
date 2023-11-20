@@ -15,8 +15,7 @@ const AppRoutes = () => {
             children: [
                 {
                     path: "/",
-                    element: <Home/>,
-                
+                    element: <Home/>,                
                 },
                 {
                     path: "/efeitos",
@@ -39,13 +38,9 @@ const AppRoutes = () => {
                     element: <Legislation/>
                 },
                 {
-                    path: "/intervençao",
+                    path: "/intervencao",
                     element: <Intervention/>
-                }
-
-
-
-                
+                }                
             ]
         }
     ])

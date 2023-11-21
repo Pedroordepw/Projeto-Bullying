@@ -9,7 +9,7 @@ const Effects = () => {
   return (
     <div className='px-4 md:px-10 py-10'>
       <div className='w-full mx-auto pb-5'>
-        <h1 className='text-color-text text-4xl md:text-6xl font-custom pb-5'>
+        <h1 className='text-color-text font-bold text-4xl md:text-6xl font-custom pb-5'>
           Impactos do Bullying: Além das Marcas Visíveis
         </h1>
         <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -20,9 +20,8 @@ const Effects = () => {
       {/* ------------------------------------------------------------------- */}
 
       <div className='flex flex-row flex-wrap mb-8'>
-        {/* Bullying Físico */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Desafios Emocionais: Cicatrizes Invisíveis na Alma
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -33,9 +32,8 @@ const Effects = () => {
           </div>
         </div>
 
-        {/* Bullying Social */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             A Face Física do Bullying: Lesões e Comprometimento da Saúde
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -48,9 +46,8 @@ const Effects = () => {
 
         </div>
 
-        {/* Bullying Verbal */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Desafios Sociais: Isolamento e Dificuldade nas Relações
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -61,9 +58,8 @@ const Effects = () => {
           </div>
         </div>
 
-        {/* Bullying Cibernético */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Impacto na Vida Acadêmica: Queda no Desempenho e Falta de Interesse
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -74,9 +70,8 @@ const Effects = () => {
           </div>
         </div>
 
-        {/* Bullying Cibernético */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Repercussões Legais: Além das Fronteiras do Comportamento Aceitável          </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
             Em casos mais graves, o bullying pode transcender as barreiras escolares e resultar em implicações legais. Processos judiciais e multas são desdobramentos possíveis, evidenciando a seriedade do problema(KÄLLMÉN; HALLGREN, 2021). Além das consequências legais, os agressores também podem enfrentar desafios em suas vidas pessoais e profissionais a longo prazo. A prevenção do bullying não apenas preserva a segurança emocional das vítimas, mas também resguarda os agressores de consequências legais indesejadas.

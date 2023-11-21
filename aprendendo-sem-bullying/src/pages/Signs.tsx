@@ -9,7 +9,7 @@ const Signs = () => {
   return (
     <div className='px-4 md:px-10 py-10'>
       <div className='w-full mx-auto pb-5'>
-        <h1 className='text-color-text text-4xl md:text-6xl font-custom pb-5'>
+        <h1 className='text-color-text font-bold text-4xl md:text-6xl font-custom pb-5'>
           Conheça alguns sinais comumente associados ao bullying
         </h1>
         <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -20,9 +20,8 @@ const Signs = () => {
       {/* ------------------------------------------------------------------- */}
 
       <div className='flex flex-row flex-wrap mb-8'>
-        {/* Bullying Físico */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Mudanças no comportamento
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -33,9 +32,8 @@ const Signs = () => {
           </div>
         </div>
 
-        {/* Bullying Social */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Mudanças no desempenho escolar
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -46,9 +44,8 @@ const Signs = () => {
           </div>
         </div>
 
-        {/* Bullying Verbal */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Mudanças físicas
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -59,9 +56,8 @@ const Signs = () => {
           </div>
         </div>
 
-        {/* Bullying Cibernético */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Perda de objetos pessoais
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -72,9 +68,8 @@ const Signs = () => {
           </div>
         </div>
 
-        {/* Bullying Cibernético */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Comportamento agressivo
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>

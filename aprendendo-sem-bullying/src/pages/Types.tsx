@@ -21,7 +21,7 @@ const Types = () => {
       <div className='flex flex-row flex-wrap mb-8'>
         {/* Bullying Físico */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Bullying Físico: A Violência Manifesta
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -32,9 +32,8 @@ const Types = () => {
           </div>
         </div>
 
-        {/* Bullying Social */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Bullying Social: A Crueldade da Exclusão
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -45,9 +44,8 @@ const Types = () => {
           </div>
         </div>
 
-        {/* Bullying Verbal */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Bullying Verbal: Palavras que Ferem Profundamente
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -58,9 +56,8 @@ const Types = () => {
           </div>
         </div>
 
-        {/* Bullying Cibernético */}
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Bullying Cibernético: A Ameaça no Mundo Digital
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>

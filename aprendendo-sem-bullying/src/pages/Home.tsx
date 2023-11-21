@@ -4,7 +4,7 @@ import bullyingImage from '../public/kids.png';
 const Home = () => {
   return (
     <div className='px-4 md:px-10 py-10'>
-      <h1 className='text-color-text text-4xl flex flex-col  md:text-6xl font-custom pb-5'>
+      <h1 className='text-color-text font-bold text-4xl flex flex-col  md:text-6xl font-custom pb-5'>
             Você sabe o que é bullying?
       </h1>
 

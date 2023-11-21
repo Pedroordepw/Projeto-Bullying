@@ -4,7 +4,7 @@ const Intervention = () => {
   return (
     <div className='px-4 md:px-10 py-10'>
       <div className='w-full mx-auto pb-5'>
-        <h1 className='text-color-text text-4xl md:text-6xl font-custom pb-5'>
+        <h1 className='text-color-text font-bold text-4xl md:text-6xl font-custom pb-5'>
           Intervenção do Bullying: Estratégias, Tipos e Benefícios
         </h1>
         <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -16,7 +16,7 @@ const Intervention = () => {
 
       <div className='flex flex-row flex-wrap mb-8'>
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             O que é intervenção do bullying?
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -25,7 +25,7 @@ const Intervention = () => {
         </div>
 
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Quais são os tipos de intervenção do bullying?
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -34,7 +34,7 @@ const Intervention = () => {
         </div>
 
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Quais são as estratégias de intervenção do bullying?
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
@@ -43,7 +43,7 @@ const Intervention = () => {
         </div>
 
         <div className='w-full md:w-1/2 mb-8 px-4'>
-          <h2 className='text-color-text text-2xl md:text-4xl font-custom pb-5'>
+          <h2 className='text-color-text font-semibold text-2xl md:text-4xl font-custom pb-5'>
             Quais são os benefícios da intervenção do bullying?
           </h2>
           <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>

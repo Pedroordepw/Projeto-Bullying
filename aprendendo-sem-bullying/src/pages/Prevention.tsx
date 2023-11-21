@@ -86,7 +86,7 @@ const Prevention = () => {
         </div>
 
         <div className='w-full mx-auto pb-5'>
-          <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>
+          <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4 indent-8' >
             É crucial lembrar que a prevenção do bullying é um processo contínuo que exige o comprometimento de toda a comunidade escolar. O projeto "Aprendendo Sem Bullying" emerge como uma ferramenta valiosa, fornecendo informações e recursos para capacitar a comunidade escolar na prevenção e combate ao bullying de maneira eficaz (MARTINS; FAUST, 2018).
           </p>
         </div>

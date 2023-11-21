@@ -15,7 +15,7 @@ export default {
         'custom': '18px',
       },
       fontFamily: {
-        'custom': ['Kadwa', 'serif'],
+        'custom': ['Quicksand', 'serif'],
       },
     },
   },

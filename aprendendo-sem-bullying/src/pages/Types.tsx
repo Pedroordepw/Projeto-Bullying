@@ -8,7 +8,7 @@ const Types = () => {
   return (
     <div className='px-4 md:px-10 py-10'>
       <div className='w-full mx-auto pb-5'>
-        <h1 className='text-color-text text-4xl md:text-6xl font-custom pb-5'>
+        <h1 className='text-color-text text-4xl md:text-6xl font-custom font-bold pb-5'>
           Você conhece os tipos de bullying?
         </h1>
         <p className='text-color-text font-custom text-lg md:text-2xl text-justify mb-4' style={{ textIndent: '2em' }}>

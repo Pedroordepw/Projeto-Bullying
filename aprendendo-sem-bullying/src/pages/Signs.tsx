@@ -1,4 +1,3 @@
-import React from 'react'
 import sinal_1 from '../public/sinais/sinal_1.png';
 import sinal_2 from '../public/sinais/sinal_2.png';
 import sinal_3 from '../public/sinais/sinal_3.png';

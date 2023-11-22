@@ -1,4 +1,3 @@
-import React from 'react';
 import bullyingImage from '../public/kids.png';
 
 const Home = () => {

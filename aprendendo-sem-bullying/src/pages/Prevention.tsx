@@ -1,4 +1,3 @@
-import React from 'react'
 import prevencao_1 from '../public/prevencoes/prevencao_1.jpg';
 import prevencao_2 from '../public/prevencoes/prevencao_2.avif';
 import prevencao_3 from '../public/prevencoes/prevencao_3.avif';

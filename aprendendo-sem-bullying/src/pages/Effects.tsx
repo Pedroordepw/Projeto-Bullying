@@ -1,4 +1,3 @@
-import React from 'react'
 import efeito_1 from '../public/efeitos/efeito_1.png';
 import efeito_2 from '../public/efeitos/efeito_2.png';
 import efeito_3 from '../public/efeitos/efeito_3.jpg';

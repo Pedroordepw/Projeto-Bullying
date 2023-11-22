@@ -1,4 +1,3 @@
-import React from 'react';
 import fisico from '../public/tipos/tipo_bullying_fisico_2.jpg';
 import verbal from '../public/tipos/tipo_bullying_verbal.jpeg';
 import social from '../public/tipos/tipo_bullying_social.png';

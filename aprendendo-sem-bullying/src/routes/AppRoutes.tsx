@@ -7,6 +7,7 @@ import Signs from "../pages/Signs"
 import Prevention from "../pages/Prevention"
 import Legislation from "../pages/Legislation"
 import Intervention from "../pages/Intervention"
+import Depoimentos from "../pages/Depoimentos"
 
 const AppRoutes = () => {
     const router = createBrowserRouter([
@@ -40,7 +41,11 @@ const AppRoutes = () => {
                 {
                     path: "/intervencao",
                     element: <Intervention/>
-                }                
+                },  
+                {
+                    path: "/depoimentos",
+                    element: <Depoimentos/>
+                }             
             ]
         }
     ])

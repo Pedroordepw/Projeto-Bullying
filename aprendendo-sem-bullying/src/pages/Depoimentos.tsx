@@ -29,6 +29,25 @@ const Depoimentos = () => {
       .then(data => setDepoimentos([...depoimentos, data]))
   }
 
+  const excluirDepoimento = (id: number) => {
+    fetch(`http://localhost:8080/depoimentos/${id}`, {
+      method: 'DELETE'
+    })
+      .then(() => setDepoimentos(depoimentos.filter(depoimento => depoimento.id !== id)))
+  }
+
+  const editarDepoimento = (id: number, texto: string) => {
+    fetch(`http://localhost:8080/depoimentos/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ texto })
+    })
+      .then(response => response.json())
+      .then(data => setDepoimentos(depoimentos.map(depoimento => depoimento.id === id ? data : depoimento)))
+  }
+
   return (
     <div className='px-4 md:px-10 py-10 flex flex-col'>
       <h1 className='text-color-text font-bold text-4xl md:text-6xl font-custom pb-5 w-full text-center'>
@@ -46,7 +65,9 @@ const Depoimentos = () => {
         {depoimentos.map(depoimento => (
           <Depoimento 
             key={depoimento.id} 
-            {...depoimento}
+            dadosDepoimento={depoimento}
+            excluirDepoimento={excluirDepoimento}
+            editarDepoimento={editarDepoimento}
           />
         ))}
       </ul>

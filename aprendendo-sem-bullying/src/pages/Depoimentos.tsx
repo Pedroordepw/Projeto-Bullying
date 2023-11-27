@@ -42,7 +42,7 @@ const Depoimentos = () => {
   const editarDepoimento = (id: number, texto: string) => {
     fetch(`${URL}/${id}`, {
       method: 'PUT',
-      headers: {
+      headers: { 
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({ texto })

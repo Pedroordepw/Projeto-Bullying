@@ -11,14 +11,16 @@ const Depoimentos = () => {
   const [depoimentos, setDepoimentos] = useState<Depoimento[]>([])
   const [mostrarCriarDepoimento, setMostrarCriarDepoimento] = useState(false)
 
+  const URL = `${import.meta.env.VITE_BACKEND}/depoimentos`
+
   useEffect(() => {
-    fetch('http://localhost:8080/depoimentos', { method: 'GET' })
+    fetch(`${URL}`, { method: 'GET' })
       .then(response => response.json())
       .then(data => setDepoimentos(data))
   }, [])
 
   const criarDepoimento = (texto: string) => {
-    fetch('http://localhost:8080/depoimentos', {
+    fetch(`${URL}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -30,14 +32,14 @@ const Depoimentos = () => {
   }
 
   const excluirDepoimento = (id: number) => {
-    fetch(`http://localhost:8080/depoimentos/${id}`, {
+    fetch(`${URL}/${id}`, {
       method: 'DELETE'
     })
       .then(() => setDepoimentos(depoimentos.filter(depoimento => depoimento.id !== id)))
   }
 
   const editarDepoimento = (id: number, texto: string) => {
-    fetch(`http://localhost:8080/depoimentos/${id}`, {
+    fetch(`${URL}/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

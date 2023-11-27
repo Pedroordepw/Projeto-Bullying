@@ -6,6 +6,13 @@ spring:
 
   jpa:
     show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+        ddl-auto: update
+    generate-ddl: true
+    open-in-view: false
 
 cors:
   front-end: ${CORS_FRONT_END:http://localhost:5173}

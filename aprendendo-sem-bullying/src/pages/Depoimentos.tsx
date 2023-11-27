@@ -11,7 +11,7 @@ const Depoimentos = () => {
   const [depoimentos, setDepoimentos] = useState<Depoimento[]>([])
   const [mostrarCriarDepoimento, setMostrarCriarDepoimento] = useState(false)
 
-  const URL = `http://${import.meta.env.VITE_BACKEND}/depoimentos`
+  const URL = `https://${import.meta.env.VITE_BACKEND}/depoimentos`
 
   useEffect(() => {
     fetch(`${URL}`, { method: 'GET' })

@@ -17,6 +17,7 @@ const Depoimentos = () => {
     fetch(`${URL}`, { method: 'GET' })
       .then(response => response.json())
       .then(data => setDepoimentos(data))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const criarDepoimento = (texto: string) => {

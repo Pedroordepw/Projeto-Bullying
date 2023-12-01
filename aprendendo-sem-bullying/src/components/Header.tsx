@@ -90,6 +90,12 @@ const Header = () => {
             </li>
           </Link>
 
+          <Link to="/depoimentos">
+            <li className='bg-button shadow-md text-color-text mb-1 rounded-custom py-2 px-3 md:py-3 md:px-5 font-custom text-sm md:text-base lg:text-lg xl:text-xl flex flex-col items-center'>
+              DEPOIMENTOS
+            </li>
+          </Link>
+
         </ul>
       </div>
     </div>
